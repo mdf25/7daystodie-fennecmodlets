@@ -400,6 +400,7 @@
 			<property name="Model" 						value="#@modfolder:Resources/Blocks.unity3d?FishTank"/>
 			<property name="ModelOffset"				value="0,0.5,0" />
 			<property name="Collide" 					value="movement,melee,bullet,arrow,rocket"/>
+			<property name="EconomicValue"				value="4000" />
 			<drop event="Destroy" 						name="resourceScrapPolymers" count="10"/>
 			<drop event="Destroy"						name="resourceBrokenGlass"	 count="2" />
 		</block>
@@ -416,6 +417,7 @@
 		
 		<block name="cntAquariumGrowingFM">
 			<property name="Extends"					value="cntAquariumBaseFM" />
+			<property name="CreativeMode"				value="None" />
 			<property name="CustomIcon"					value="cntAquariumEmptyFM" />
 			<property name="Model" 						value="#@modfolder:Resources/Blocks.unity3d?FishTankGrowing"/>
 			<property name="Class" 						value="UpgradeRated"/>
@@ -431,6 +433,7 @@
 		
 		<block name="cntAquariumGrowing2FM">
 			<property name="Extends"					value="cntAquariumBaseFM" />
+			<property name="CreativeMode"				value="None" />
 			<property name="CustomIcon"					value="cntAquariumEmptyFM" />
 			<property name="Model" 						value="#@modfolder:Resources/Blocks.unity3d?FishTankGrowing"/>
 			<property name="Class" 						value="UpgradeRated"/>
@@ -446,6 +449,7 @@
 		
 		<block name="cntAquariumGrowing3FM">
 			<property name="Extends"					value="cntAquariumBaseFM" />
+			<property name="CreativeMode"				value="None" />
 			<property name="CustomIcon"					value="cntAquariumEmptyFM" />
 			<property name="Model" 						value="#@modfolder:Resources/Blocks.unity3d?FishTankGrowing"/>
 			<property name="Class" 						value="UpgradeRated"/>
@@ -455,6 +459,7 @@
 		
 		<block name="cntAquariumHarvestableFM">
 			<property name="Extends"					value="cntAquariumBaseFM" />
+			<property name="CreativeMode"				value="None" />
 			<property name="CustomIcon"					value="cntAquariumEmptyFM" />
 			<property name="DowngradeBlock"				value="cntAquariumEmptyFM" />
 			<property name="Model" 						value="#@modfolder:Resources/Blocks.unity3d?FishTankReady"/>
@@ -473,6 +478,7 @@
 			<property name="Model" 						value="#@modfolder:Resources/Blocks.unity3d?Beehive"/>
 			<property name="ModelOffset"				value="0,0.5,0" />
 			<property name="Collide" 					value="movement,melee,bullet,arrow,rocket"/>
+			<property name="EconomicValue"				value="300" />
 			<drop event="Destroy" 						name="resourceWood" 		 count="20"/>
 			<drop event="Destroy"						name="resourceScrapPolymers" count="5" />
 		</block>
@@ -489,6 +495,7 @@
 		
 		<block name="cntBeehiveGrowingFM">
 			<property name="Extends"					value="cntBeehiveBaseFM" />
+			<property name="CreativeMode"				value="None" />
 			<property name="CustomIcon"					value="cntBeehiveEmptyFM" />
 			<property name="Class" 						value="UpgradeRated"/>
 			<property name="UpgradeRated.ToBlock" 		value="cntBeehiveHarvestableFM"/>
@@ -503,6 +510,7 @@
 		
 		<block name="cntBeehiveGrowing2FM">
 			<property name="Extends"					value="cntBeehiveBaseFM" />
+			<property name="CreativeMode"				value="None" />
 			<property name="CustomIcon"					value="cntBeehiveEmptyFM" />
 			<property name="Class" 						value="UpgradeRated"/>
 			<property name="UpgradeRated.ToBlock" 		value="cntBeehiveHarvestableFM"/>
@@ -517,6 +525,7 @@
 		
 		<block name="cntBeehiveGrowing3FM">
 			<property name="Extends"					value="cntBeehiveBaseFM" />
+			<property name="CreativeMode"				value="None" />
 			<property name="CustomIcon"					value="cntBeehiveEmptyFM" />
 			<property name="Class" 						value="UpgradeRated"/>
 			<property name="UpgradeRated.ToBlock" 		value="cntBeehiveHarvestableFM"/>
@@ -525,6 +534,7 @@
 		
 		<block name="cntBeehiveHarvestableFM">
 			<property name="Extends"					value="cntBeehiveBaseFM" />
+			<property name="CreativeMode"				value="None" />
 			<property name="CustomIcon"					value="cntBeehiveEmptyFM" />
 			<property name="DowngradeBlock"				value="cntBeehiveGrowingFM" />
 			<property name="Class"						value="Loot" />

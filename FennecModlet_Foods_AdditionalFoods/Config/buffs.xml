@@ -133,7 +133,7 @@
 			<effect_group name="Cure Stomach Cramps">
 				<requirement name="HasBuff" buff="buffIllStomachCrampsFM"/>
 				<requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="20"/>
-				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" target="self" buff="buffIllFoodPoisoning0"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" target="self" buff="buffIllStomachCrampsFM"/>
 			</effect_group>
 			<effect_group name="Cure Food Poisoning 0">
 				<requirement name="HasBuff" buff="buffIllFoodPoisoning0"/>
@@ -256,12 +256,12 @@
 			<effect_group>
 				<requirement 	name="HoldingItemHasTags" 			tags="ranged" />
 				<requirement 	name="HoldingItemHasTags" 			tags="shotgun" invert="true" />
-				<passive_effect name="SpreadMultiplierAiming" 		operation="perc_add" value=".1" />
-				<passive_effect name="SpreadMultiplierCrouching" 	operation="perc_add" value=".1" />
-				<passive_effect name="SpreadMultiplierWalking" 		operation="perc_add" value=".1" />
-				<passive_effect name="SpreadMultiplierRunning" 		operation="perc_add" value=".1" />
-				<passive_effect name="SpreadMultiplierHip" 			operation="perc_add" value=".1" />
-				<passive_effect name="SpreadMultiplierIdle" 		operation="perc_add" value=".1" />
+				<passive_effect name="SpreadMultiplierAiming" 		operation="perc_add" value=".2" />
+				<passive_effect name="SpreadMultiplierCrouching" 	operation="perc_add" value=".3" />
+				<passive_effect name="SpreadMultiplierWalking" 		operation="perc_add" value=".2" />
+				<passive_effect name="SpreadMultiplierRunning" 		operation="perc_add" value=".2" />
+				<passive_effect name="SpreadMultiplierHip" 			operation="perc_add" value=".2" />
+				<passive_effect name="SpreadMultiplierIdle" 		operation="perc_add" value=".3" />
 			</effect_group>
 		</buff>
 		
@@ -285,7 +285,7 @@
 			<duration value="300"/>
 			<effect_group>
 				<requirement name="HoldingItemHasTags" tags="melee" />
-				<passive_effect name="AttacksPerMinute" operation="perc_add" value="0.1" />
+				<passive_effect name="AttacksPerMinute" operation="perc_add" value="0.15" />
 			</effect_group>
 		</buff>
 		
@@ -311,7 +311,7 @@
 			<duration value="300"/>
 			<effect_group>
 				<requirement 	name="HoldingItemHasTags" 		tags="ranged"/>
-				<passive_effect name="ReloadSpeedMultiplier" 	operation="perc_add" value="0.1" />
+				<passive_effect name="ReloadSpeedMultiplier" 	operation="perc_add" value="0.25" />
 			</effect_group>
 		</buff>
 		
