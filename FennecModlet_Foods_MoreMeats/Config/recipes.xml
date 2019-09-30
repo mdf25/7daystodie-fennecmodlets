@@ -1,0 +1,219 @@
+<configs>
+	<!-- Adds a dependency tag to the start of the XML -->
+	
+	<insertBefore xpath="/*/*[1]">
+		<!-- DEPENDENCY: FennecModlet - Foods - More Meats -->
+	</insertBefore>
+	
+	<!-- Adds the recipes for charring, boiling, grilling -->
+	<append xpath="/recipes">
+	
+		<!-- Charred Meats -->
+		<recipe name="foodCharredBearMeatFM"			count="1" craft_area="campfire" craft_time="40">
+			<ingredient name="foodRawBearMeatFM"				count="5" />
+		</recipe>
+		
+		<recipe name="foodCharredBoarMeatFM"			count="1" craft_area="campfire" craft_time="40">
+			<ingredient name="foodRawBoarMeatFM"				count="5" />
+		</recipe>
+		
+		<recipe name="foodCharredChickenMeatFM"			count="1" craft_area="campfire" craft_time="40">
+			<ingredient name="foodRawChickenMeatFM"				count="5" />
+		</recipe>
+		
+		<recipe name="foodCharredRabbitMeatFM"			count="1" craft_area="campfire" craft_time="40">
+			<ingredient name="foodRawRabbitMeatFM"				count="5" />
+		</recipe>
+		
+		<recipe name="foodCharredSnakeMeatFM"			count="1" craft_area="campfire" craft_time="40">
+			<ingredient name="foodRawSnakeMeatFM"				count="5" />
+		</recipe>
+		
+		<recipe name="foodCharredVenisonMeatFM"			count="1" craft_area="campfire" craft_time="40">
+			<ingredient name="foodRawVenisonMeatFM"				count="5" />
+		</recipe>
+		
+		<recipe name="foodCharredWolfMeatFM"			count="1" craft_area="campfire" craft_time="40">
+			<ingredient name="foodRawWolfMeatFM"				count="5" />
+		</recipe>
+	
+	
+		<!-- Boiled Meats -->
+		<recipe name="foodBoiledBearMeatFM"				count="1" craft_area="campfire" craft_tool="toolCookingPot" craft_time="40">
+			<ingredient name="foodRawBearMeatFM"				count="5" />
+			<ingredient name="drinkJarBoiledWater"				count="1" />
+		</recipe>
+		
+		<recipe name="foodBoiledBoarMeatFM"				count="1" craft_area="campfire" craft_tool="toolCookingPot" craft_time="40">
+			<ingredient name="foodRawBoarMeatFM"				count="5" />
+			<ingredient name="drinkJarBoiledWater"				count="1" />
+		</recipe>
+		
+		<recipe name="foodBoiledChickenMeatFM"			count="1" craft_area="campfire" craft_tool="toolCookingPot" craft_time="40">
+			<ingredient name="foodRawChickenMeatFM"				count="5" />
+			<ingredient name="drinkJarBoiledWater"				count="1" />
+		</recipe>
+		
+		<recipe name="foodBoiledRabbitMeatFM"			count="1" craft_area="campfire" craft_tool="toolCookingPot" craft_time="40">
+			<ingredient name="foodRawRabbitMeatFM"				count="5" />
+			<ingredient name="drinkJarBoiledWater"				count="1" />
+		</recipe>
+		
+		<recipe name="foodBoiledSnakeMeatFM"			count="1" craft_area="campfire" craft_tool="toolCookingPot" craft_time="40">
+			<ingredient name="foodRawSnakeMeatFM"				count="5" />
+			<ingredient name="drinkJarBoiledWater"				count="1" />
+		</recipe>
+		
+		<recipe name="foodBoiledVenisonMeatFM"			count="1" craft_area="campfire" craft_tool="toolCookingPot" craft_time="40">
+			<ingredient name="foodRawVenisonMeatFM"				count="5" />
+			<ingredient name="drinkJarBoiledWater"				count="1" />
+		</recipe>
+		
+		<recipe name="foodBoiledWolfMeatFM"				count="1" craft_area="campfire" craft_tool="toolCookingPot" craft_time="40">
+			<ingredient name="foodRawWolfMeatFM"				count="5" />
+			<ingredient name="drinkJarBoiledWater"				count="1" />
+		</recipe>
+	
+	
+		<!-- Grilled Meats -->
+		<recipe name="foodGrilledBearMeatFM"			count="1" craft_area="campfire" craft_tool="toolCookingGrill" craft_time="40">
+			<ingredient name="foodRawBearMeatFM"				count="5" />
+		</recipe>
+		
+		<recipe name="foodGrilledBoarMeatFM"			count="1" craft_area="campfire" craft_tool="toolCookingGrill" craft_time="40">
+			<ingredient name="foodRawBoarMeatFM"				count="5" />
+		</recipe>
+		
+		<recipe name="foodGrilledChickenMeatFM"			count="1" craft_area="campfire" craft_tool="toolCookingGrill" craft_time="40">
+			<ingredient name="foodRawChickenMeatFM"				count="5" />
+		</recipe>
+		
+		<recipe name="foodGrilledRabbitMeatFM"			count="1" craft_area="campfire" craft_tool="toolCookingGrill" craft_time="40">
+			<ingredient name="foodRawRabbitMeatFM"				count="5" />
+		</recipe>
+		
+		<recipe name="foodGrilledSnakeMeatFM"			count="1" craft_area="campfire" craft_tool="toolCookingGrill" craft_time="40">
+			<ingredient name="foodRawSnakeMeatFM"				count="5" />
+		</recipe>
+		
+		<recipe name="foodGrilledVenisonMeatFM"			count="1" craft_area="campfire" craft_tool="toolCookingGrill" craft_time="40">
+			<ingredient name="foodRawVenisonMeatFM"				count="5" />
+		</recipe>
+		
+		<recipe name="foodGrilledWolfMeatFM"			count="1" craft_area="campfire" craft_tool="toolCookingGrill" craft_time="40">
+			<ingredient name="foodRawWolfMeatFM"				count="5" />
+		</recipe>
+	
+	
+		<!-- Adds vanilla recipes for canned foods -->
+		<recipe name="foodCanDogfood"					count="1" craft_area="campfire" craft_tool="toolCookingPot">
+			<ingredient name="drinkCanEmpty"					count="1" />
+			<ingredient name="foodBoiledBoarMeatFM"				count="1" />
+			<ingredient name="foodBoiledChickenMeatFM"			count="1" />
+			<ingredient name="drinkJarBoiledWater"				count="1" />
+		</recipe>
+		
+		<recipe name="foodCanChicken"					count="1" craft_area="campfire" craft_tool="toolCookingPot">
+			<ingredient name="drinkCanEmpty"					count="1" />
+			<ingredient name="foodBoiledChickenMeatFM"			count="1" />
+			<ingredient name="drinkJarBoiledWater"				count="1" />
+		</recipe>
+		
+		<recipe name="foodCanCatfood"					count="1" craft_area="campfire" craft_tool="toolCookingPot">
+			<ingredient name="drinkCanEmpty"					count="1" />
+			<ingredient name="foodBoiledChickenMeatFM"			count="1" />
+			<ingredient name="foodBoiledRabbitMeatFM"			count="1" />
+			<ingredient name="drinkJarBoiledWater"				count="1" />
+		</recipe>
+	</append>
+	
+	
+	
+	<!-- Changes existing vanilla recipes to use the different meats, changes up some of them -->
+	<set xpath="//recipe[@name='foodBaconAndEggs']/ingredient[@name='foodRawMeat']/@name">foodRawBoarMeatFM</set>
+	<set xpath="//recipe[@name='foodSteakAndPotato']/ingredient[@name='foodRawMeat']/@name">foodRawVenisonMeatFM</set>
+	<set xpath="//recipe[@name='foodChiliDog']/ingredient[@name='foodRawMeat']/@name">foodRawWolfMeatFM</set>
+	<set xpath="//recipe[@name='foodMeatStew']/ingredient[@name='foodRawMeat']/@name">foodRawBearMeatFM</set>
+	
+	
+	
+	<!-- Adds more variants for meat stew -->
+	
+	<append xpath="/recipes">
+		
+		<recipe name="foodMeatStew" 					count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="learnable">
+			<ingredient name="foodRawBoarMeatFM" 				count="5"/>
+			<ingredient name="foodRawWolfMeatFM"				count="5"/>
+			<ingredient name="foodCropPotato" 					count="2"/>
+			<ingredient name="foodCropCorn" 					count="2"/>
+			<ingredient name="drinkJarBoiledWater" 				count="1"/>
+		</recipe>
+		
+		<recipe name="foodMeatStew" 					count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="learnable">
+			<ingredient name="foodRawChickenMeatFM" 			count="10"/>
+			<ingredient name="foodRawRabbitMeatFM"				count="10"/>
+			<ingredient name="foodCropPotato" 					count="2"/>
+			<ingredient name="foodCropCorn" 					count="2"/>
+			<ingredient name="drinkJarBoiledWater" 				count="1"/>
+		</recipe>
+		
+		<recipe name="foodMeatStew" 					count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="learnable">
+			<ingredient name="foodRawVenisonMeatFM" 			count="5"/>
+			<ingredient name="foodRawSnakeMeatFM"				count="10"/>
+			<ingredient name="foodCropPotato" 					count="2"/>
+			<ingredient name="foodCropCorn" 					count="2"/>
+			<ingredient name="drinkJarBoiledWater" 				count="1"/>
+		</recipe>
+		
+	</append>
+	
+	<!-- Checks to see if FennecModlet - Foods - Additonal Foods is installed, and if so, changes up the meats to use the new ones -->
+
+	<!-- Sets water to vegetable oil -->
+	<set xpath="/*[comment() = ' DEPENDENCY: FennecModlet - Foods - Additional Foods ']//recipe[contains(@name, 'CanCatfood')]/ingredient[@name='drinkJarBoiledWater']/@name">drinkJarVegetableOilFM</set>
+	<set xpath="/*[comment() = ' DEPENDENCY: FennecModlet - Foods - Additional Foods ']//recipe[contains(@name, 'CanChicken')]/ingredient[@name='drinkJarBoiledWater']/@name">drinkJarVegetableOilFM</set>
+	<set xpath="/*[comment() = ' DEPENDENCY: FennecModlet - Foods - Additional Foods ']//recipe[contains(@name, 'CanDogfood')]/ingredient[@name='drinkJarBoiledWater']/@name">drinkJarVegetableOilFM</set>
+
+	
+	<!-- British Breakfast -->
+	<set xpath="/*[comment() = ' DEPENDENCY: FennecModlet - Foods - Additional Foods ']//recipe[contains(@name, 'BritishBreakfast')]/ingredient[@name='foodRawMeat']/@name">foodRawBoarMeatFM</set>
+	
+	
+	<!-- Chicken Burger -->
+	<set xpath="/*[comment() = ' DEPENDENCY: FennecModlet - Foods - Additional Foods ']//recipe[contains(@name, 'Chicken')]/ingredient[@name='foodGrilledMeat']/@name">foodGrilledChickenMeatFM</set>
+	
+	<!-- Fish Food -->
+	<set xpath="/*[comment() = ' DEPENDENCY: FennecModlet - Foods - Additional Foods ']//recipe[contains(@name, 'FishFood')]/ingredient[@name='foodRawMeat']/@name">foodRawBoarMeatFM</set>
+	
+	<!-- Hog Roast Burger -->
+	<set xpath="/*[comment() = ' DEPENDENCY: FennecModlet - Foods - Additional Foods ']//recipe[contains(@name, 'HogRoast')]/ingredient[@name='foodCharredMeat']/@name">foodCharredBoarMeatFM</set>
+	<set xpath="/*[comment() = ' DEPENDENCY: FennecModlet - Foods - Additional Foods ']//recipe[contains(@name, 'HogRoast')]/ingredient[@name='foodGrilledMeat']/@name">foodGrilledBoarMeatFM</set>
+	
+	<!-- Hunter Stew -->
+	<set xpath="/*[comment() = ' DEPENDENCY: FennecModlet - Foods - Additional Foods ']//recipe[contains(@name, 'HunterStew')]/ingredient[@name='foodRawMeat']/@name">foodRawRabbitMeatFM</set>
+	
+	
+	<!-- Wolfie's Meat Stew -->
+	<set xpath="/*[comment() = ' DEPENDENCY: FennecModlet - Foods - Additional Foods ']//recipe[contains(@name, 'Wolfie')]/ingredient[@name='foodRawMeat']/@name">foodRawBearMeatFM</set>
+
+	
+	<!-- Base meats for all other recipes -->
+	<set xpath="/*[comment() = ' DEPENDENCY: FennecModlet - Foods - Additional Foods ']//recipe[contains(@name, 'Chicken')]/ingredient[@name='foodRawMeat']/@name">foodRawChickenMeatFM</set>
+	<set xpath="/*[comment() = ' DEPENDENCY: FennecModlet - Foods - Additional Foods ']//recipe[contains(@name, 'Snake')]/ingredient[@name='foodRawMeat']/@name">foodRawSnakeMeatFM</set>
+	<set xpath="/*[comment() = ' DEPENDENCY: FennecModlet - Foods - Additional Foods ']//recipe[contains(@name, 'Venison')]/ingredient[@name='foodRawMeat']/@name">foodRawVenisonMeatFM</set>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</configs>

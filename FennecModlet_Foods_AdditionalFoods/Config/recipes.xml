@@ -404,11 +404,17 @@
 			<ingredient name="foodCropAppleFM"					count="1" />
 		</recipe>
 		
-		
 		<recipe name="foodHogRoastBurgerFM" 			count="1" craft_time="45" tags="learnable">
 			<ingredient name="foodBurgerBunFM"					count="1" />
 			<ingredient name="foodGrilledMeat" 					count="1" />
 			<ingredient name="foodCharredMeat"					count="2" />
+		</recipe>
+		
+		<recipe name="foodHoneyChickenKabobsFM"			count="1" craft_area="campfire" craft_tool="toolCookingGrill" craft_time="50" tags="learnable">
+			<ingredient name="foodRawMeat"						count="10" />
+			<ingredient name="foodCropTomatoFM"					count="1" />
+			<ingredient name="foodHoney"						count="1" />
+			<ingredient name="drinkJarVegetableOilFM"			count="1" />
 		</recipe>
 		
 		<recipe name="foodHoneyYuccaPieFM" 				count="1" craft_area="campfire" craft_tool="toolCookingPot" craft_time="90" tags="learnable">
