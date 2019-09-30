@@ -1,6 +1,6 @@
 <configs>
 	<!-- Adds a dependency tag to the start of the XML -->
-	<insertBefore xpath="/*[1]">
+	<insertBefore xpath="/*/*[1]">
 		<!-- DEPENDENCY: FennecModlet - Foods - Additional Foods -->
 	</insertBefore>
 	
@@ -369,6 +369,11 @@
 			<ingredient name="resourceTinFoilFM"				count="1" />
 		</recipe>
 		
+		<recipe name="foodGelatinFM"					count="2" craft_area="campfire" craft_tool="toolCookingPot" craft_time="600" tags="learnable">
+			<ingredient name="drinkJarBoiledWater"				count="1" />
+			<ingredient name="resourceFemur"					count="2" />
+		</recipe>
+		
 		<recipe name="foodGrilledCheeseFM" 				count="1" craft_area="campfire" craft_tool="toolCookingGrill" craft_time="60">
 			<ingredient name="foodBreadSliceFM"       			count="1" />
 			<ingredient name="foodCheeseFM"						count="1" />
@@ -380,6 +385,25 @@
 			<ingredient name="resourceCropChrysanthemumPlant"	count="1" />
 			<ingredient name="resourceRockSmall"				count="1" />
 		</recipe>
+		
+		<recipe name="foodGummyBearsBlueFM"				count="1" craft_area="campfire" craft_tool="toolCookingPot" craft_time="30">
+			<ingredient name="foodGelatinFM"					count="1" />
+			<ingredient name="drinkJarBlueberryJuiceFM"			count="1" />
+			<ingredient name="foodCropBlueberries"				count="3" />
+		</recipe>
+		
+		<recipe name="foodGummyBearsBlackFM"				count="1" craft_area="campfire" craft_tool="toolCookingPot" craft_time="30">
+			<ingredient name="foodGelatinFM"					count="1" />
+			<ingredient name="drinkJarRedTea"					count="1" />
+			<ingredient name="foodCropPearFM"					count="1" />
+		</recipe>
+		
+		<recipe name="foodGummyBearsRedFM"				count="1" craft_area="campfire" craft_tool="toolCookingPot" craft_time="30">
+			<ingredient name="foodGelatinFM"					count="1" />
+			<ingredient name="drinkJarBlueberryJuiceFM"			count="1" />
+			<ingredient name="foodCropAppleFM"					count="1" />
+		</recipe>
+		
 		
 		<recipe name="foodHogRoastBurgerFM" 			count="1" craft_time="45" tags="learnable">
 			<ingredient name="foodBurgerBunFM"					count="1" />
@@ -644,11 +668,15 @@
 			<ingredient name="drinkJarEmpty" 					count="1" />
 		</recipe>
 		
-		<recipe name="drinkJarVegetableOilFM" 			count="1" craft_time="25" tags="learnable">
-			<ingredient name="foodCropCorn"						count="2" />
-			<ingredient name="foodCropPotato"					count="2" />
-			<ingredient name="foodCropWheatFM"					count="2" />
+		<recipe name="drinkJarVegetableOilFM" 			count="1" craft_area="campfire" craft_tool="toolCookingPot" craft_time="25" tags="learnable">
+			<ingredient name="foodCropCorn"						count="3" />
+			<ingredient name="resourceAnimalFat"				count="1" />
 			<ingredient name="drinkJarEmpty" 					count="1" />
+		</recipe>
+		
+		<recipe name="drinkJarVegetableOilFM"			count="1" craft_area="chemistryStation" craft_time="20">
+			<ingredient name="foodCropCorn"						count="2" />
+			<ingredient name="drinkJarEmpty"					count="1" />
 		</recipe>
 		
 		<recipe name="drinkCartonSoyaMilkFM" 			count="1" craft_time="25">
